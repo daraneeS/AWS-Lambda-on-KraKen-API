@@ -1,7 +1,7 @@
 # AWS Lambda 201: 
 ## Overview
 * An expansion of Bitcoin Project using KraKen API
-* Schedule **AWS EventBridge** to automate **Lambda Functions** to send requests to KraKen API Daily and every minute
+* Schedule Cron Expresion on**AWS EventBridge**to trigger **Lambda Function** to send requests to KraKen API Daily and every minute
 * Write and Store CSV Files into **S3 bucket**
 * Zip requests package and add to lambda function layer
 * Add AWSSDKPandas-Python39 layer for pandas
