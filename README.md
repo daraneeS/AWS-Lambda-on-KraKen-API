@@ -1,6 +1,6 @@
 # AWS Lambda 201
 ![png](images/workflow.png)
-<img src="images/workflow.png" width="200" height="400" />
+<img src="images/workflow.png" width="1200" height="400" />
 * **Schedule EventBridge**
 * **Get Bitcoin Price Daily | Every Minute**
 * **Store CSV Files in S3**
