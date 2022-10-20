@@ -1,9 +1,10 @@
-# AWS Lambda 201
-<img src="images/workflow.png" width="700" height="300" />
+# AWS Lambda 201: 
+## Overview
+* An expansion of Bitcoin Project using KraKen API
+* Schedule **AWS EventBridge** to automate **Lambda Functions** to send requests to KraKen API Daily and every minute
+* Write and Store CSV Files into **S3 bucket**
 
-* **Schedule EventBridge**
-* **Get Bitcoin Price Daily | Every Minute**
-* **Store CSV Files in S3**
+<img src="images/workflow.png" width="700" height="300" />
 
 ```
 import json
