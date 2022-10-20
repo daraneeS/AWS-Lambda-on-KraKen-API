@@ -1,8 +1,14 @@
-# AWS Lambda 201
-![png](images/diagram.png)
-* **Schedule EventBridge**
-* **Get Bitcoin Price Daily | Every Minute**
-* **Store CSV Files in S3**
+# AWS Lambda 201: 
+## Overview
+* An expansion of Bitcoin Project using KraKen API
+* Schedule **Cron Expresions** on **AWS EventBridge** to trigger **Lambda Function** to send requests to KraKen API Daily and every minute
+* Write and Store CSV Files into **S3 bucket**
+* Zip requests package and add to lambda function **layer**
+* Add AWSSDKPandas-Python39 layer for pandas
+* Create **IAM role** for lambda and attach **policy** on S3 and **CloudWatch Logs**
+
+<img src="images/workflow.png" width="700" height="300" />
+
 ```
 import json
 import requests
@@ -14,15 +20,10 @@ from io import StringIO
 bucket = "bucket_name"
 
 def lambda_handler(event, context):
-    
     resp = requests.get('https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1&since=unix_now').json()
-
     kraken_ohlc_cols = ["date","open", "high", "low", "close", "vwap","volume", "trades"]
-    
     df = pd.DataFrame([resp['result']['XXBTZUSD'][-1]], columns=kraken_ohlc_cols)
-
-    df["date"] = pd.to_datetime(df["date"],unit='s')
-    
+    df["date"] = pd.to_datetime(df["date"],unit='s') 
     print(df)
     
     csv_buffer = StringIO()
