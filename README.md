@@ -1,5 +1,5 @@
 # AWS Lambda 201
-![png](images/diagram.png)
+![png](images/workflow.png)
 * **Schedule EventBridge**
 * **Get Bitcoin Price Daily | Every Minute**
 * **Store CSV Files in S3**
