@@ -2,8 +2,7 @@
 * **Schedule EventBridge**
 * **Get Bitcoin Price Daily | Every Minute**
 * **Store CSV Files in S3**
-![png](images/diagram.png)
-<img src="images/diagram.png" width="200%" height="150%">
+<img src="images/diagram.png" width="600%" height="300%">
 
 
 
