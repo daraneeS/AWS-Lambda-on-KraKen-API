@@ -1,10 +1,8 @@
-# AWS Lambda 201: 
+# AWS Lambda 201
+![png](images/diagram.png)
 * **Schedule EventBridge**
 * **Get Bitcoin Price Daily | Every Minute**
 * **Store CSV Files in S3**
-![png](images/diagram.png)
-
-
 ```
 import json
 import requests
