@@ -3,6 +3,9 @@
 * An expansion of Bitcoin Project using KraKen API
 * Schedule **AWS EventBridge** to automate **Lambda Functions** to send requests to KraKen API Daily and every minute
 * Write and Store CSV Files into **S3 bucket**
+* Zip requests package and add to lambda function layer
+* Add AWSSDKPandas-Python39 layer for pandas
+* Create IAM role for lambda and attach policy on S3 and CloudWatch Logs
 
 <img src="images/workflow.png" width="700" height="300" />
 
