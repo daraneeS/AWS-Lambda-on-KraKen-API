@@ -3,7 +3,7 @@
 * **Get Bitcoin Price Daily | Every Minute**
 * **Store CSV Files in S3**
 ![png](images/diagram.png)
-<img width="800" src="images/diagram.png">
+
 
 
 
