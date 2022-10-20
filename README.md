@@ -1,5 +1,5 @@
 # AWS Lambda 201
-<img src="images/workflow.png" width="800" height="250" />
+<img src="images/workflow.png" width="700" height="300" />
 
 * **Schedule EventBridge**
 * **Get Bitcoin Price Daily | Every Minute**
