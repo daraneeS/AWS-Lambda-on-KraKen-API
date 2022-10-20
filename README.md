@@ -8,6 +8,7 @@
 * Create **IAM role** for lambda and attach **policy** on S3 and **CloudWatch Logs**
 
 <img src="images/workflow.png" width="700" height="300" />
+<img src="images/csv_btc_1min.png" width="900" height="400" />
 
 ```
 import json
@@ -18,7 +19,6 @@ import boto3
 from io import StringIO
 
 bucket = "bucket_name"
-
 def lambda_handler(event, context):
     resp = requests.get('https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1&since=unix_now').json()
     kraken_ohlc_cols = ["date","open", "high", "low", "close", "vwap","volume", "trades"]
@@ -31,12 +31,6 @@ def lambda_handler(event, context):
     s3_resource = boto3.resource('s3')
     file_name = datetime.now().strftime("%Y%m%d-%H%M%S")
     s3_resource.Object(bucket, f'btc_{file_name}.csv').put(Body=csv_buffer.getvalue())
-    
-    return {
-        'statusCode': 200,
-        'body': json.dumps('Hello from Lambda!')
-    }
-
 ```
 
 
