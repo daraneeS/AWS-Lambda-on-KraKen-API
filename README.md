@@ -5,7 +5,7 @@
 * Write and Store CSV Files into **S3 bucket**
 * Zip requests package and add to lambda function **layer**
 * Add AWSSDKPandas-Python39 layer for pandas
-* Create **IAM role** for lambda and attach **policy** on S3 and **CloudWatch Logs**
+
 
 <img src="images/workflow.png" width="700" height="300" />
 <img src="images/csv_btc_1min.png" width="900" height="400" />
