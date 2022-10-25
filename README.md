@@ -1,4 +1,4 @@
-# AWS Lambda 201: 
+# AWS Lambda on KraKenAPI
 ## Overview
 * An expansion of Bitcoin Project using KraKen API
 * Schedule **Cron Expresions** on **AWS EventBridge** to trigger **Lambda Function** to send requests to KraKen API Daily and every minute
