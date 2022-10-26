@@ -11,7 +11,6 @@
 
 ![png](images/btc_daily_lambda.png)
 
-<img src="images/csv_btc_1min.png" width="900" height="400" />
 
 ```
 import json
