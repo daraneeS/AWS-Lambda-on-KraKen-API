@@ -8,6 +8,7 @@
 
 
 <img src="images/workflow.png" width="700" height="300" />
+<img src="images/btc_daily_lambda.png" width="900" height="400" />
 <img src="images/csv_btc_1min.png" width="900" height="400" />
 
 ```
